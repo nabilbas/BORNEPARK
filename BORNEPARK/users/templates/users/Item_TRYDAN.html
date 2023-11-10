@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% load static %}  <!-- Add this line to load the static tag library -->
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <!-- Display an image in the middle of the page -->
+                <img src="{% static 'img/your_image_name_here.jpg' %}" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+        </div>
+    </div>
+{% endblock %}
